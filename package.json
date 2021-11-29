@@ -1,0 +1,19 @@
+{
+  "name": "three",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.7",
+    "three": "^0.134.0",
+    "three-orbitcontrols": "^2.110.3"
+  }
+}
