@@ -1,4 +1,4 @@
-// console.log("This works");
+// A THREE.js Environment is made up of 5 things:
 // Renderer (what the user sees)
 // Scene (the data)
 // Camera(the perspective)
