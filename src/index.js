@@ -7,10 +7,12 @@
 
 const {AxesHelper} = require("three");
 const THREE = require("three");
+const orbit = require("three-orbitcontrols");
 
 function createRenderer() {
-  let renderer = new THREE.WebGLRenderer({antialias: true});
-
+  let renderer = new THREE.WebGLRenderer({
+    antialias: true,
+  });
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setClearColor("#16161d");
   let output = document.querySelector("#output");
@@ -101,6 +103,8 @@ let cube = createCube();
 let sphere = createSphere();
 let light = createLight();
 let lightHelper = createLightHelper(light);
+
+let control = new orbit(camera, renderer.domElement);
 
 light.position.x = 10;
 light.position.y = 10;
