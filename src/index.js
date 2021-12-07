@@ -124,7 +124,7 @@ for (let i = 1; i <= cubeCount; i += 1) {
 
 console.log(cubes.length);
 
-scene.add(axesHelper);
+// scene.add(axesHelper);
 scene.add(cube, sphere, light, lightHelper, ...cubes);
 
 renderer.render(scene, camera);
